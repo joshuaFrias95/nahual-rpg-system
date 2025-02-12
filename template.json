@@ -1,0 +1,17 @@
+{
+    "Actor": {
+        "types": [
+            "Angelero",
+            "Diablero",
+            "Ángel",
+            "Diablo"
+        ],
+        "templates": {
+            "background": {
+                "biography": "",
+                "hairColor": "blue"
+            }
+
+        }
+    }
+}
