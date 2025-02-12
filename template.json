@@ -40,20 +40,24 @@
       }
     },
     "Item": {
-      "types": ["weapon", "spell"],
+      "types": ["Arma", "Armadura", "Vehiculo"],
       "templates": {
         "rarity": {
-          "rarity": "Common",
-          "price": 20
+          "rarity": ["Común", "Sobrenatural", "Maldito","Bendito" ]
         }
       },
-      "weapon": {
+      "arma": {
         "templates": ["rarity"],
-        "damage": 5
+        "description": ""
       },
-      "spell": {
+      "armadura": {
         "templates": ["rarity"],
-        "cost": 2
+        "nivel": 2,
+        "description": ""
+      },
+      "vehiculo": {
+        "templates": ["rarity"],
+        "description": ""
       }
     }
     }
