@@ -24,7 +24,9 @@
         "minimum": 11,
         "verified": "12"
     },
-    "esmodules": [],
+    "esmodules": [
+        "module/module.js"
+    ],
     "styles": [],
     "languages": [],
     "packs": [],

@@ -3,11 +3,11 @@ export default class FSItemSheet extends ItemSheet {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ['boilerplate', 'sheet', 'item'],
             width: 520,
-            height: 480,
+            height: 80,
             tabs: [
                 {
                     navSelector: '.sheet-tabs',
-                    contentSelector: '.shee-body',
+                    contentSelector: '.sheet-body', 
                     initial: 'description'
                 },
             ],
