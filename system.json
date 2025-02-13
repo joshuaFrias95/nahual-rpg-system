@@ -1,23 +1,38 @@
 {
     "id": "nahual",
-    "title": "Nahual RPG"  ,
-    "description": "Nahual es un juego de rol de mesa mexicano de fantasia urbana ubicada en México. En Nahual juegan como Nahuales que cambian de forma que cazan ángeles como su manera de subsistir, manejando juntos un changarro y vendiendo sus presas como diferentes tipos de productos.",
-    "version": "0.0.1",
+    "title": "Nahual RPG",
+    "description": "Nahual es un juego de rol de mesa mexicano de fantasia urbana ubicada en México. En Nahual juegan como Nahuales que cambian de forma que cazan ángeles como su manera de subsistir, vendiendo sus presas como diferentes tipos de productos.",
     "authors": [
         {
             "name": "K. Ashford",
-            "url": "https://github.com/joshuaFrias95"
+            "discord": "",
+            "url": ""
         }
     ],
-    "scripts": [ ],
-    "esmodules": [ ],
-    "styles": [ ],
-    "packs": [ ],
-    "languages": [ ],
+    "url": "",
+    "readme": "",
+    "bugs": "",
+    "changelog": "CHANGELOG.md",
+    "media": [
+        {
+            "type": "setup",
+            "thumbnail": "systems/nahual/assets/NahualTabletopRPG.jpg"
+        }
+    ],
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": 11,
+        "verified": "11.315"
+    },
+    "esmodules": [],
+    "styles": [],
+    "languages": [],
+    "packs": [],
+    "packFolders": [],
     "socket": false,
-    "gridDistance": 1,
-    "gridPoints": "m",
-    "url": "https://github.com/joshuaFrias95/nahual-rpg-system",
     "manifest": "",
-    "download": ""
+    "download": "",
+    "background": "",
+    "gridDistance": 1.5,
+    "gridUnits": "m"
 }
