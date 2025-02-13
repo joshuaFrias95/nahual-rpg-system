@@ -3,7 +3,7 @@ export default class FSItemSheet extends ItemSheet {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ['boilerplate', 'sheet', 'item'],
             width: 520,
-            height: 80,
+            height: 480,
             tabs: [
                 {
                     navSelector: '.sheet-tabs',
@@ -11,6 +11,7 @@ export default class FSItemSheet extends ItemSheet {
                     initial: 'description'
                 },
             ],
+            template: "systems/nahual/templates/sheets/weapon-sheet.html"
         });
     }
 }
