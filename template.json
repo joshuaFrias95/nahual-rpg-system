@@ -1,63 +1,60 @@
 {
-    "Actor": {
-      "types": ["Angelero", "Diablero", "Angel", "Diablo", "Chacal del Narco"],
-      "templates": {
-        "background": {
-          "biography": "",
-          "hairColor": "blue"
-        },
-        "resources": {
-          "health": {
-            "min": 0,
-            "value": 10,
-            "max": 10
-          },
-          "power": {
-            "min": 0,
-            "value": 1,
-            "max": 3
-          }
-        }
-      },
-      "angelero": {
-        "templates": ["background", "resources"],
-        "goodness": {
-          "value": 5,
+  "Actor": {
+    "types": ["personaje", "pnj"],
+    "templates": {
+      "base": {
+        "health": {
+          "value": 10,
+          "min": 0,
           "max": 10
-        }
-      },
-      "diablero": {
-        "templates": ["resources"]
-      },
-      "angel": {
-        "templates": ["resources"]
-      },
-      "diablo": {
-        "templates": ["resources"]
-      },
-      "chacal del narco": {
-        "templates": ["resources"]
+        },
+        "biography": ""
       }
     },
-    "Item": {
-      "types": ["Arma", "Armadura", "Vehiculo"],
-      "templates": {
-        "rarity": {
-          "rarity": ["Común", "Sobrenatural", "Maldito","Bendito" ]
+    "personaje": {
+      "templates": ["base"],
+      "atributes": {
+        "level": {
+          "value": 1
         }
       },
-      "arma": {
-        "templates": ["rarity"],
-        "description": ""
-      },
-      "armadura": {
-        "templates": ["rarity"],
-        "nivel": 2,
-        "description": ""
-      },
-      "vehiculo": {
-        "templates": ["rarity"],
-        "description": ""
+      "abilities": {
+        "garra": {
+          "value": 0
+        },
+        "maña": {
+          "value": 0
+        },
+        "barrio": {
+          "value": 0
+        },
+        "instinto": {
+          "value": 0
+        }
       }
+    },
+    "npc": {
+      "templates": ["base"],
+      "cr": 0
     }
-    }
+  },
+  "Item": {
+    "types": ["arma", "objeto", "vehiculo"],
+    "templates": {
+      "base": {
+        "description": "",
+        "rarity": ["común", "Especial", "Sobrenatural"]
+      }
+    },
+    "arma": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d6 + @str.mod + ceil(@1v1 / 2)"
+    },
+    "objeto": {
+      "templates": ["base"]
+    },
+    "vehiculo": ["base"]
+  } 
+}
