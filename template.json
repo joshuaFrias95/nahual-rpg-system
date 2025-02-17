@@ -4,15 +4,26 @@
     "templates": {
       "base": {
         "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
+          "leve": {
+            "value": 0,
+            "max": 2
+          },
+          "grave": {
+            "value": 0,
+            "max": 2
+          },
+          "mortal": {
+            "value": 0,
+            "max": 2
+          }
         },
         "biography": ""
-      }
+      },
+      "rol": ["Angelero", "Diablero"],
+      "nahual": ["Águila", "Armadillo", "Mono", "Perro", "Serpiente", "Tlacuache", "Venado"]
     },
     "personaje": {
-      "templates": ["base"],
+      "templates": ["base", "rol"],
       "atributes": {
         "level": {
           "value": 1
@@ -20,26 +31,30 @@
       },
       "abilities": {
         "garra": {
+          "label": "Garra",
           "value": 0
         },
-        "maña": {
+        "mana":{
+          "label": "Maña",
           "value": 0
-        },
+        } ,
         "barrio": {
+          "label": "Barrio",
           "value": 0
         },
         "instinto": {
-          "value": 0
+          "label": "Instinto",
+          "value":0 
         }
       }
     },
     "npc": {
-      "templates": ["base"],
+      "templates": ["base", "rol"],
       "cr": 0
     }
   },
   "Item": {
-    "types": ["arma", "objeto", "vehiculo"],
+    "types": ["arma", "objeto", "vehiculo", "escudo"],
     "templates": {
       "base": {
         "description": "",
